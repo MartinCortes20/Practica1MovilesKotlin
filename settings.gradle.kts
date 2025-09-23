@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Tarea1CortesMartin7CV2"
+rootProject.name = "practia1kotlin"
 include(":app")
+ 

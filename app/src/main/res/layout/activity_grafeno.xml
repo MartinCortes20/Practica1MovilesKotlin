@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Botón de regreso -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Regresar" />
+
+        <!-- Imagen principal -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imgGrafeno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/grafeno_detail"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔬 GRAFENO"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Descripción -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0D47A1"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El grafeno es una forma alotrópica del carbono compuesta por una sola capa de átomos de carbono dispuestos en una red hexagonal bidimensional. Es el material más resistente jamás descubierto, siendo aproximadamente 200 veces más fuerte que el acero."
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="✨ Características principales:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#0D47A1"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Extraordinariamente fuerte y ligero\n• Excelente conductor eléctrico y térmico\n• Transparente y flexible\n• Impermeable a gases\n• Aplicaciones en electrónica, medicina y materiales compuestos"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:lineSpacingExtra="2dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

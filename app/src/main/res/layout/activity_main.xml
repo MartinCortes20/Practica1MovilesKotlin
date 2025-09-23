@@ -1,93 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5"
-    tools:context=".MainActivity">
+    android:background="#9575CD"
+    android:padding="20dp">
 
-    <!-- Título de la aplicación -->
+    <!-- Título principal -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Elementos de Interfaz de Usuario"
-        android:textSize="20sp"
+        android:text="Mayores Materiales Más Resistentes"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#2196F3"
-        android:padding="16dp"
-        android:gravity="center"
-        android:background="#FFFFFF"
-        android:elevation="4dp" />
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp" />
 
-    <!-- Menú de navegación con botones -->
-    <HorizontalScrollView
+    <!-- Contenedor de las tarjetas -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:elevation="2dp">
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
+        <!-- Tarjeta 1: Grafeno -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGrafeno"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
 
-            <Button
-                android:id="@+id/btnTextFields"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="📝 TextFields"
-                android:layout_margin="4dp"
-                android:textSize="12sp"
-                style="@style/Widget.Material3.Button.OutlinedButton" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:gravity="center_vertical">
 
-            <Button
-                android:id="@+id/btnButtons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="🔘 Botones"
-                android:layout_margin="4dp"
-                android:textSize="12sp"
-                style="@style/Widget.Material3.Button.OutlinedButton" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_grafeno"
+                    android:layout_marginEnd="20dp"
+                    android:scaleType="centerCrop" />
 
-            <Button
-                android:id="@+id/btnSelection"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="☑️ Selección"
-                android:layout_margin="4dp"
-                android:textSize="12sp"
-                style="@style/Widget.Material3.Button.OutlinedButton" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnLists"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="📋 Listas"
-                android:layout_margin="4dp"
-                android:textSize="12sp"
-                style="@style/Widget.Material3.Button.OutlinedButton" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔬 Grafeno"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
 
-            <Button
-                android:id="@+id/btnInfo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ℹ️ Información"
-                android:layout_margin="4dp"
-                android:textSize="12sp"
-                style="@style/Widget.Material3.Button.OutlinedButton" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="El material más resistente conocido"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="5dp" />
 
-        </LinearLayout>
-    </HorizontalScrollView>
+                </LinearLayout>
 
-    <!-- Contenedor para los fragments -->
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#F5F5F5" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta 2: Diamante -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDiamante"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_diamante"
+                    android:layout_marginEnd="20dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💎 Diamante"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="La dureza más alta en la escala de Mohs"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta 3: Carburo de Tungsteno -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCarburo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_carburo"
+                    android:layout_marginEnd="20dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⚒️ Carburo de Tungsteno"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Extremadamente duro y resistente al desgaste"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 
 </LinearLayout>

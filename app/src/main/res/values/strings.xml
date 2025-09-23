@@ -1,3 +1,39 @@
 <resources>
-    <string name="app_name">Tarea1CortesMartin7CV2</string>
+    <string name="app_name">Materiales Resistentes</string>
+
+    <!-- Textos principales -->
+    <string name="titulo_principal">Mayores Materiales Más Resistentes</string>
+
+    <!-- Materiales -->
+    <string name="grafeno_titulo">🔬 Grafeno</string>
+    <string name="grafeno_descripcion_corta">El material más resistente conocido</string>
+
+    <string name="diamante_titulo">💎 Diamante</string>
+    <string name="diamante_descripcion_corta">La dureza más alta en la escala de Mohs</string>
+
+    <string name="carburo_titulo">⚒️ Carburo de Tungsteno</string>
+    <string name="carburo_descripcion_corta">Extremadamente duro y resistente al desgaste</string>
+
+    <!-- Botones -->
+    <string name="btn_regresar">Regresar</string>
+
+    <!-- Descripciones de contenido -->
+    <string name="descripcion_titulo">Descripción</string>
+    <string name="caracteristicas_titulo">✨ Características principales:</string>
+
+    <!-- Descripción del Grafeno -->
+    <string name="grafeno_descripcion">El grafeno es una forma alotrópica del carbono compuesta por una sola capa de átomos de carbono dispuestos en una red hexagonal bidimensional. Es el material más resistente jamás descubierto, siendo aproximadamente 200 veces más fuerte que el acero.</string>
+
+    <string name="grafeno_caracteristicas">• Extraordinariamente fuerte y ligero\n• Excelente conductor eléctrico y térmico\n• Transparente y flexible\n• Impermeable a gases\n• Aplicaciones en electrónica, medicina y materiales compuestos</string>
+
+    <!-- Descripción del Diamante -->
+    <string name="diamante_descripcion">El diamante es la forma más dura del carbono en condiciones normales de presión y temperatura. Con una dureza de 10 en la escala de Mohs, es el material natural más duro conocido y ha sido valorado tanto por su belleza como por sus propiedades únicas.</string>
+
+    <string name="diamante_caracteristicas">• Dureza máxima (10 en escala de Mohs)\n• Alta conductividad térmica\n• Excelente aislante eléctrico\n• Resistente a la corrosión química\n• Aplicaciones industriales y joyería\n• Herramientas de corte y perforación</string>
+
+    <!-- Descripción del Carburo de Tungsteno -->
+    <string name="carburo_descripcion">El carburo de tungsteno es un compuesto químico extremadamente duro formado por tungsteno y carbono. Es ampliamente utilizado en aplicaciones industriales debido a su excepcional dureza y resistencia al desgaste, siendo casi tan duro como el diamante.</string>
+
+    <string name="carburo_caracteristicas">• Dureza de 8.5-9 en la escala de Mohs\n• Resistencia extrema al desgaste\n• Alta densidad y peso\n• Resistente a la corrosión\n• Herramientas de corte industriales\n• Joyería resistente a rayones\n• Componentes de maquinaria pesada</string>
+
 </resources>

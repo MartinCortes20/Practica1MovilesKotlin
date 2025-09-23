@@ -1,4 +1,4 @@
-package com.escom.tarea1cortesmartin7cv2
+package com.escom.practia1kotlin
 
 import org.junit.Test
 
