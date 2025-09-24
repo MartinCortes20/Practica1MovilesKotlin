@@ -1,39 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Materiales Resistentes</string>
+    <string name="app_name">UI Elements Demo</string>
 
-    <!-- Textos principales -->
-    <string name="titulo_principal">Mayores Materiales Más Resistentes</string>
+    <!-- MainActivity -->
+    <string name="nav_textfields">TextFields</string>
+    <string name="nav_buttons">Buttons</string>
+    <string name="nav_selection">Selection</string>
+    <string name="nav_lists">Lists</string>
+    <string name="nav_info_elements">Info Elements</string>
 
-    <!-- Materiales -->
-    <string name="grafeno_titulo">🔬 Grafeno</string>
-    <string name="grafeno_descripcion_corta">El material más resistente conocido</string>
+    <!-- TextFields Fragment -->
+    <string name="textfields_title">📝 TextFields (EditText)</string>
+    <string name="textfields_description">💡 Los EditText permiten al usuario ingresar y editar texto. Son fundamentales para formularios y captura de datos.</string>
+    <string name="textfields_interactive">⚡ Prueba los diferentes tipos:</string>
 
-    <string name="diamante_titulo">💎 Diamante</string>
-    <string name="diamante_descripcion_corta">La dureza más alta en la escala de Mohs</string>
+    <!-- Buttons Fragment -->
+    <string name="buttons_title">🎨 Botones (Button, ImageButton)</string>
+    <string name="buttons_description">💡 Los botones son elementos interactivos que ejecutan acciones cuando el usuario los toca. Pueden contener texto o imágenes.</string>
+    <string name="buttons_interactive">⚡ Prueba los diferentes tipos:</string>
 
-    <string name="carburo_titulo">⚒️ Carburo de Tungsteno</string>
-    <string name="carburo_descripcion_corta">Extremadamente duro y resistente al desgaste</string>
+    <!-- Selection Fragment -->
+    <string name="selection_title">✅ Elementos de Selección</string>
+    <string name="selection_description">💡 Permiten al usuario seleccionar opciones: CheckBox (múltiple), RadioButton (única), Switch (on/off).</string>
+    <string name="selection_checkbox">⚡ CheckBox - Selección múltiple:</string>
+    <string name="selection_radio">⚡ RadioButton - Selección única:</string>
+    <string name="selection_switch">⚡ Switch - Activar/Desactivar:</string>
 
-    <!-- Botones -->
-    <string name="btn_regresar">Regresar</string>
+    <!-- Lists Fragment -->
+    <string name="lists_title">📋 Listas (RecyclerView)</string>
+    <string name="lists_description">💡 RecyclerView muestra listas eficientemente, reutilizando vistas para mejor rendimiento con grandes cantidades de datos.</string>
+    <string name="lists_interactive">⚡ Toca cualquier elemento de la lista:</string>
 
-    <!-- Descripciones de contenido -->
-    <string name="descripcion_titulo">Descripción</string>
-    <string name="caracteristicas_titulo">✨ Características principales:</string>
-
-    <!-- Descripción del Grafeno -->
-    <string name="grafeno_descripcion">El grafeno es una forma alotrópica del carbono compuesta por una sola capa de átomos de carbono dispuestos en una red hexagonal bidimensional. Es el material más resistente jamás descubierto, siendo aproximadamente 200 veces más fuerte que el acero.</string>
-
-    <string name="grafeno_caracteristicas">• Extraordinariamente fuerte y ligero\n• Excelente conductor eléctrico y térmico\n• Transparente y flexible\n• Impermeable a gases\n• Aplicaciones en electrónica, medicina y materiales compuestos</string>
-
-    <!-- Descripción del Diamante -->
-    <string name="diamante_descripcion">El diamante es la forma más dura del carbono en condiciones normales de presión y temperatura. Con una dureza de 10 en la escala de Mohs, es el material natural más duro conocido y ha sido valorado tanto por su belleza como por sus propiedades únicas.</string>
-
-    <string name="diamante_caracteristicas">• Dureza máxima (10 en escala de Mohs)\n• Alta conductividad térmica\n• Excelente aislante eléctrico\n• Resistente a la corrosión química\n• Aplicaciones industriales y joyería\n• Herramientas de corte y perforación</string>
-
-    <!-- Descripción del Carburo de Tungsteno -->
-    <string name="carburo_descripcion">El carburo de tungsteno es un compuesto químico extremadamente duro formado por tungsteno y carbono. Es ampliamente utilizado en aplicaciones industriales debido a su excepcional dureza y resistencia al desgaste, siendo casi tan duro como el diamante.</string>
-
-    <string name="carburo_caracteristicas">• Dureza de 8.5-9 en la escala de Mohs\n• Resistencia extrema al desgaste\n• Alta densidad y peso\n• Resistente a la corrosión\n• Herramientas de corte industriales\n• Joyería resistente a rayones\n• Componentes de maquinaria pesada</string>
-
+    <!-- Info Elements Fragment -->
+    <string name="info_elements_title">📊 Elementos de Información</string>
+    <string name="info_elements_description">💡 Elementos para mostrar información: TextView (texto), ImageView (imágenes), ProgressBar (progreso).</string>
+    <string name="info_elements_textview">⚡ TextView dinámico:</string>
+    <string name="info_elements_imageview">⚡ ImageView (cambia cada 3 segundos):</string>
+    <string name="info_elements_progressbar">⚡ ProgressBar (simula carga):</string>
 </resources>

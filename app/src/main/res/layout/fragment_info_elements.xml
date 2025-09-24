@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Elementos de Información"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#7B1FA2"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- Botón Volver -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Volver al Menú"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_gravity="start" />
+
+        </LinearLayout>
+
+        <!-- Explicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Elementos para mostrar información: TextView (texto), ImageView (imágenes), ProgressBar (progreso)."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:textColor="#424242" />
+
+        <!-- TextView dinámico -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ TextView dinámico:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#7B1FA2" />
+
+        <TextView
+            android:id="@+id/tvDinamico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 Este texto cambia dinámicamente..."
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ImageView -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ ImageView (cambia cada 3 segundos):"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#7B1FA2" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_dialog_email"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ProgressBar -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ ProgressBar (simula carga):"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#7B1FA2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tvProgreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progreso: 0%"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="#424242" />
+
+        <Button
+            android:id="@+id/btnSimular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simular Proceso de Carga"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Información adicional -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔍 Características:\n• TextView: Muestra texto estático o dinámico\n• ImageView: Muestra imágenes, íconos o recursos gráficos\n• ProgressBar: Indica progreso de tareas o carga"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:textColor="#424242" />
+
+    </LinearLayout>
+</ScrollView>

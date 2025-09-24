@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ Elementos de Selección"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#F57C00"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Explicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Permiten al usuario seleccionar opciones: CheckBox (múltiple), RadioButton (única), Switch (on/off)."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:textColor="#424242" />
+
+        <!-- CheckBoxes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ CheckBox - Selección múltiple:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#F57C00" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tus intereses:"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/cbOpcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deportes"
+            android:minHeight="48dp" />
+
+        <CheckBox
+            android:id="@+id/cbOpcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Música"
+            android:minHeight="48dp" />
+
+        <CheckBox
+            android:id="@+id/cbOpcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tecnología"
+            android:minHeight="48dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- RadioButtons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ RadioButton - Selección única:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#F57C00" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu nivel:"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgOpciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbOpcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principiante"
+                android:minHeight="48dp" />
+
+            <RadioButton
+                android:id="@+id/rbOpcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermedio"
+                android:minHeight="48dp" />
+
+            <RadioButton
+                android:id="@+id/rbOpcion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avanzado"
+                android:minHeight="48dp" />
+
+        </RadioGroup>
+
+        <!-- Switch -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ Switch - Activar/Desactivar:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#F57C00" />
+
+        <Switch
+            android:id="@+id/switchNotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recibir notificaciones"
+            android:minHeight="48dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón para mostrar resultados -->
+        <Button
+            android:id="@+id/btnMostrarSeleccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Selecciones"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Área de resultados -->
+        <TextView
+            android:id="@+id/tvResultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Haz tus selecciones y presiona el botón..."
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:textColor="#424242" />
+
+    </LinearLayout>
+</ScrollView>

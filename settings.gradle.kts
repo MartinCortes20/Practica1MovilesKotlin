@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "practia1kotlin"
+rootProject.name = "practica1ActivitiesFragments"
 include(":app")
- 

@@ -1,4 +1,4 @@
-package com.escom.practia1kotlin
+package com.escom.practica1activitiesfragments
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.escom.practia1kotlin", appContext.packageName)
+        assertEquals("com.escom.practica1activitiesfragments", appContext.packageName)
     }
 }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE4EC"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Listas (RecyclerView)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#C2185B"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Explicación -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 RecyclerView muestra listas eficientemente, reutilizando vistas para mejor rendimiento con grandes cantidades de datos."
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#424242" />
+
+    <!-- Ejemplo interactivo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚡ Toca cualquier elemento de la lista:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#C2185B" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:contentDescription="Lista de productos tecnológicos" />
+
+</LinearLayout>

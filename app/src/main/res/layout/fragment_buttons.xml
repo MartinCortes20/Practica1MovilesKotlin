@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎨 Botones (Button, ImageButton)"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Explicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Los botones son elementos interactivos que ejecutan acciones cuando el usuario los toca. Pueden contener texto o imágenes."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:textColor="#424242" />
+
+        <!-- Ejemplos interactivos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ Prueba los diferentes tipos:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#388E3C" />
+
+        <!-- Botón normal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button normal:"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Presiona aquí"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón secundario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button con estilo secundario:"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSecundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Botón Secundario"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ImageButton -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ImageButton (con contador):"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/imgButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@android:drawable/ic_input_add"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Botón para incrementar contador"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:id="@+id/tvContador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contador: 0"
+                android:textSize="16sp"
+                android:textColor="#424242" />
+
+        </LinearLayout>
+
+        <!-- Información adicional -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔍 Características:\n• Button: Contiene texto y ejecuta acciones\n• ImageButton: Muestra íconos y es más compacto\n• Diferentes estilos: Material, outlined, text, etc."
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

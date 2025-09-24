@@ -1,4 +1,4 @@
-package com.escom.practia1kotlin
+package com.escom.practica1activitiesfragments
 
 import org.junit.Test
 
