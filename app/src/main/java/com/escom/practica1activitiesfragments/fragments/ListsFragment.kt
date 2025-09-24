@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.escom.practica1activitiesfragments.MainActivity
 import com.escom.practica1activitiesfragments.R
 import com.escom.practica1activitiesfragments.adapters.SampleAdapter
 
@@ -35,7 +36,7 @@ class ListsFragment : Fragment() {
 
         // Configurar listener del botón volver
         btnVolver.setOnClickListener {
-            requireActivity().onBackPressed()
+            (requireActivity() as MainActivity).goBackToWelcome()
         }
 
         // Configurar RecyclerView

@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.escom.practica1activitiesfragments.MainActivity
 import com.escom.practica1activitiesfragments.R
 
 class TextFieldsFragment : Fragment() {
@@ -37,10 +38,11 @@ class TextFieldsFragment : Fragment() {
         etPassword = view.findViewById(R.id.etPassword)
         btnMostrar = view.findViewById(R.id.btnMostrar)
         tvResultado = view.findViewById(R.id.tvResultado)
+        btnVolver = view.findViewById(R.id.btnVolver)
 
         // Configurar listener del botón volver
         btnVolver.setOnClickListener {
-            requireActivity().onBackPressed()
+            (requireActivity() as MainActivity).goBackToWelcome()
         }
 
         // Configurar listener del botón mostrar

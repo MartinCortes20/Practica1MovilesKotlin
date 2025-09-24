@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.escom.practica1activitiesfragments.MainActivity
 import com.escom.practica1activitiesfragments.R
 
 class InfoElementsFragment : Fragment() {
@@ -42,6 +43,12 @@ class InfoElementsFragment : Fragment() {
         progressBar = view.findViewById(R.id.progressBar)
         btnSimular = view.findViewById(R.id.btnSimular)
         tvProgreso = view.findViewById(R.id.tvProgreso)
+        btnVolver = view.findViewById(R.id.btnVolver)
+
+        // Configurar listener del botón volver
+        btnVolver.setOnClickListener {
+            (requireActivity() as MainActivity).goBackToWelcome()
+        }
 
         // Configurar listeners
         btnSimular.setOnClickListener {
@@ -50,11 +57,6 @@ class InfoElementsFragment : Fragment() {
 
         // Cambiar imagen cada 3 segundos
         cambiarImagenPeriodicamente()
-
-        // Configurar listener del botón volver
-        btnVolver.setOnClickListener {
-            requireActivity().onBackPressed()
-        }
     }
 
     private fun simularCarga() {

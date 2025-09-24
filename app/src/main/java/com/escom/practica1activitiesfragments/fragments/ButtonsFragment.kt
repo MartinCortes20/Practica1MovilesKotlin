@@ -9,6 +9,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.escom.practica1activitiesfragments.MainActivity
 import com.escom.practica1activitiesfragments.R
 
 class ButtonsFragment : Fragment() {
@@ -40,7 +41,7 @@ class ButtonsFragment : Fragment() {
 
         // Configurar listener del botón volver
         btnVolver.setOnClickListener {
-            requireActivity().onBackPressed()
+            (requireActivity() as MainActivity).goBackToWelcome()
         }
 
         // Configurar listeners de botones
