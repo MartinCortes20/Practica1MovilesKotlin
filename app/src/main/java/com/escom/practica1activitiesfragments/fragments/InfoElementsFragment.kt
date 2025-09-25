@@ -13,6 +13,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.escom.practica1activitiesfragments.MainActivity
 import com.escom.practica1activitiesfragments.R
+import android.content.Intent
+import com.escom.practica1activitiesfragments.InfoElementsDetailActivity
+
 
 class InfoElementsFragment : Fragment() {
 
@@ -22,6 +25,8 @@ class InfoElementsFragment : Fragment() {
     private lateinit var btnSimular: Button
     private lateinit var tvProgreso: TextView
     private lateinit var btnVolver: Button
+    private lateinit var btnAbrirActivity: Button
+
 
     private var progreso = 0
     private val handler = Handler(Looper.getMainLooper())
@@ -44,10 +49,17 @@ class InfoElementsFragment : Fragment() {
         btnSimular = view.findViewById(R.id.btnSimular)
         tvProgreso = view.findViewById(R.id.tvProgreso)
         btnVolver = view.findViewById(R.id.btnVolver)
+        btnAbrirActivity = view.findViewById(R.id.btnAbrirActivity)
+
 
         // Configurar listener del botón volver
         btnVolver.setOnClickListener {
             (requireActivity() as MainActivity).goBackToWelcome()
+        }
+
+        btnAbrirActivity.setOnClickListener {
+            val intent = Intent(requireContext(), InfoElementsDetailActivity::class.java)
+            startActivity(intent)
         }
 
         // Configurar listeners

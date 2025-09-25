@@ -11,6 +11,9 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.escom.practica1activitiesfragments.MainActivity
 import com.escom.practica1activitiesfragments.R
+import android.content.Intent
+import com.escom.practica1activitiesfragments.ButtonsDetailActivity
+
 
 class ButtonsFragment : Fragment() {
 
@@ -20,6 +23,7 @@ class ButtonsFragment : Fragment() {
     private lateinit var tvContador: TextView
     private lateinit var btnVolver: Button
     private var contador = 0
+    private lateinit var btnAbrirActivity: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,10 +42,19 @@ class ButtonsFragment : Fragment() {
         imgButton = view.findViewById(R.id.imgButton)
         tvContador = view.findViewById(R.id.tvContador)
         btnVolver = view.findViewById(R.id.btnVolver)
+        btnAbrirActivity = view.findViewById(R.id.btnAbrirActivity)
+
+
+
 
         // Configurar listener del botón volver
         btnVolver.setOnClickListener {
             (requireActivity() as MainActivity).goBackToWelcome()
+        }
+
+        btnAbrirActivity.setOnClickListener {
+            val intent = Intent(requireContext(), ButtonsDetailActivity::class.java)
+            startActivity(intent)
         }
 
         // Configurar listeners de botones

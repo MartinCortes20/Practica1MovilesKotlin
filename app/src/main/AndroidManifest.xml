@@ -17,6 +17,27 @@
             </intent-filter>
         </activity>
 
+        <!-- Detail Activities -->
+        <activity
+            android:name=".TextFieldsDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ButtonsDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SelectionDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ListsDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".InfoElementsDetailActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

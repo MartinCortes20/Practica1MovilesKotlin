@@ -135,5 +135,14 @@
             android:textSize="14sp"
             android:textColor="#424242" />
 
+        <!-- Botón para abrir Activity -->
+        <Button
+            android:id="@+id/btnAbrirActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir Detail Activity"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#1976D2" />
+
     </LinearLayout>
 </ScrollView>

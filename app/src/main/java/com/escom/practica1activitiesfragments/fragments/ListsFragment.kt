@@ -12,12 +12,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.escom.practica1activitiesfragments.MainActivity
 import com.escom.practica1activitiesfragments.R
 import com.escom.practica1activitiesfragments.adapters.SampleAdapter
+import android.content.Intent
+import com.escom.practica1activitiesfragments.ListsDetailActivity
+
 
 class ListsFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: SampleAdapter
     private lateinit var btnVolver: Button
+    private lateinit var btnAbrirActivity: Button
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,9 +39,17 @@ class ListsFragment : Fragment() {
         recyclerView = view.findViewById(R.id.recyclerView)
         btnVolver = view.findViewById(R.id.btnVolver)
 
+        btnAbrirActivity = view.findViewById(R.id.btnAbrirActivity)
+
+
         // Configurar listener del botón volver
         btnVolver.setOnClickListener {
             (requireActivity() as MainActivity).goBackToWelcome()
+        }
+
+        btnAbrirActivity.setOnClickListener {
+            val intent = Intent(requireContext(), ListsDetailActivity::class.java)
+            startActivity(intent)
         }
 
         // Configurar RecyclerView

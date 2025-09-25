@@ -11,6 +11,8 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.escom.practica1activitiesfragments.MainActivity
 import com.escom.practica1activitiesfragments.R
+import android.content.Intent
+import com.escom.practica1activitiesfragments.TextFieldsDetailActivity
 
 class TextFieldsFragment : Fragment() {
 
@@ -20,6 +22,8 @@ class TextFieldsFragment : Fragment() {
     private lateinit var btnMostrar: Button
     private lateinit var tvResultado: TextView
     private lateinit var btnVolver: Button
+    private lateinit var btnAbrirActivity: Button
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,6 +44,9 @@ class TextFieldsFragment : Fragment() {
         tvResultado = view.findViewById(R.id.tvResultado)
         btnVolver = view.findViewById(R.id.btnVolver)
 
+        btnAbrirActivity = view.findViewById(R.id.btnAbrirActivity)
+
+
         // Configurar listener del botón volver
         btnVolver.setOnClickListener {
             (requireActivity() as MainActivity).goBackToWelcome()
@@ -49,7 +56,15 @@ class TextFieldsFragment : Fragment() {
         btnMostrar.setOnClickListener {
             mostrarDatos()
         }
+
+        // Configurar listener
+        btnAbrirActivity.setOnClickListener {
+            val intent = Intent(requireContext(), TextFieldsDetailActivity::class.java)
+            startActivity(intent)
+        }
     }
+
+
 
     private fun mostrarDatos() {
         val nombre = etNombre.text.toString()

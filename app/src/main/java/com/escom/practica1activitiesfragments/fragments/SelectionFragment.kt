@@ -7,6 +7,10 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import com.escom.practica1activitiesfragments.R
+import android.content.Intent
+import com.escom.practica1activitiesfragments.SelectionDetailActivity
+
+
 
 class SelectionFragment : Fragment() {
 
@@ -20,6 +24,8 @@ class SelectionFragment : Fragment() {
     private lateinit var switchNotif: Switch
     private lateinit var btnMostrarSeleccion: Button
     private lateinit var tvResultados: TextView
+    private lateinit var btnAbrirActivity: Button
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -44,6 +50,8 @@ class SelectionFragment : Fragment() {
         btnMostrarSeleccion = view.findViewById(R.id.btnMostrarSeleccion)
         tvResultados = view.findViewById(R.id.tvResultados)
 
+        btnAbrirActivity = view.findViewById(R.id.btnAbrirActivity)
+
         // Configurar listeners
         btnMostrarSeleccion.setOnClickListener {
             mostrarSelecciones()
@@ -53,6 +61,14 @@ class SelectionFragment : Fragment() {
             val estado = if (isChecked) "activadas" else "desactivadas"
             Toast.makeText(context, "Notificaciones $estado", Toast.LENGTH_SHORT).show()
         }
+
+        btnAbrirActivity.setOnClickListener {
+            val intent = Intent(requireContext(), SelectionDetailActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 
     private fun mostrarSelecciones() {
